@@ -94,7 +94,7 @@ public class EncryptEbsVolumes {
 							Thread.sleep(1000);
 						}
 						
-						// Take snapshot and create encrypted volume from snapshot
+						// Reattach encrypted volume
 						if (instances.size() == 0) {
 							outputData(unencrypted, encrypted, null, "Complete", startTime, outputFileName, ec2Client);
 						} else {
